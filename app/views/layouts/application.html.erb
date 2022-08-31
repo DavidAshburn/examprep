@@ -14,9 +14,7 @@
     <% if notice %>
       <%= render 'layouts/alerts' %>
     <% end %>
-    <% if user_signed_in? %>
-      <%= render 'layouts/nav' %>
-    <% end %>
+    <%= render 'layouts/nav' %>
     <%= yield %>
   </body>
 </html>
