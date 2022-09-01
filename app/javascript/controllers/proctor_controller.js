@@ -27,7 +27,7 @@ export default class extends Controller {
   }
 
   updateScore() {
-    let result = (((this.correct - this.wrong) / this.questions.length)).toFixed(2) * 100
+    let result = ((this.correctcount / this.questions.length) * 100).toFixed(0)
     this.resultsTarget.innerText = `${result}%`
     this.correctTarget.innerText = this.correctcount
     this.incorrectTarget.innerText = this.wrongcount
